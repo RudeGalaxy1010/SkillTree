@@ -28,7 +28,7 @@ public class Points
         }
 
         _value += value;
-        Changed?.Invoke(value);
+        Changed?.Invoke(_value);
     }
 
     public void Remove(int value)
@@ -44,6 +44,6 @@ public class Points
         }
 
         _value -= value;
-        Changed?.Invoke(value);
+        Changed?.Invoke(_value);
     }
 }
