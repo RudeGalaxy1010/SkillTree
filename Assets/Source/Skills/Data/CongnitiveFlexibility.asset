@@ -13,5 +13,8 @@ MonoBehaviour:
   m_Name: CongnitiveFlexibility
   m_EditorClassIdentifier: 
   Name: Congnitive Flexibility
-  Cost: 25
+  Cost: 5
   Preview: {fileID: 21300000, guid: 487e3b535de48b747883a5200655be96, type: 3}
+  IsUnlocked: 0
+  Requirements:
+  - {fileID: 11400000, guid: a00a449dd780f854b8a6c7dcd92a704c, type: 2}

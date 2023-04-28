@@ -15,3 +15,6 @@ MonoBehaviour:
   Name: Critical Thinking
   Cost: 5
   Preview: {fileID: 21300000, guid: 3c390058928abcb42b83a60bb8dca391, type: 3}
+  IsUnlocked: 0
+  Requirements:
+  - {fileID: 11400000, guid: a00a449dd780f854b8a6c7dcd92a704c, type: 2}

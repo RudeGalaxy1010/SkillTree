@@ -6,4 +6,6 @@ public class SkillData : ScriptableObject
     public string Name;
     public int Cost;
     public Sprite Preview;
+    public bool IsUnlocked;
+    public SkillData[] Requirements;
 }

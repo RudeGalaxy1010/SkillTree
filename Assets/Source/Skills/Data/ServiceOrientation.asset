@@ -13,5 +13,8 @@ MonoBehaviour:
   m_Name: ServiceOrientation
   m_EditorClassIdentifier: 
   Name: Service Orientation
-  Cost: 15
+  Cost: 10
   Preview: {fileID: 21300000, guid: 08577a1ff776b7144b59baa52fabf95d, type: 3}
+  IsUnlocked: 0
+  Requirements:
+  - {fileID: 11400000, guid: ef07f7f566228ba469b53ba157aa75f4, type: 2}

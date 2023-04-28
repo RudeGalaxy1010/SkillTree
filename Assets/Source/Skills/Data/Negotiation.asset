@@ -13,5 +13,8 @@ MonoBehaviour:
   m_Name: Negotiation
   m_EditorClassIdentifier: 
   Name: Negotiation
-  Cost: 15
+  Cost: 5
   Preview: {fileID: 21300000, guid: b95141f4590d8024ba8ad4b72e42fa9d, type: 3}
+  IsUnlocked: 0
+  Requirements:
+  - {fileID: 11400000, guid: a00a449dd780f854b8a6c7dcd92a704c, type: 2}

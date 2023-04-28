@@ -13,5 +13,8 @@ MonoBehaviour:
   m_Name: SolvingComplexProblems
   m_EditorClassIdentifier: 
   Name: Solving Complex Problems
-  Cost: 5
+  Cost: 10
   Preview: {fileID: 21300000, guid: d1f5d77dae18d284088de05dd86b412e, type: 3}
+  IsUnlocked: 0
+  Requirements:
+  - {fileID: 11400000, guid: ef07f7f566228ba469b53ba157aa75f4, type: 2}
