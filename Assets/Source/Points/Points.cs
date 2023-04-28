@@ -31,11 +31,11 @@ public class Points
         Changed?.Invoke(_value);
     }
 
-    public void Remove(int value)
+    public bool TrySpend(int value)
     {
-        if (value == 0)
+        if (_value < value)
         {
-            return;
+            return false;
         }
 
         if (value <= 0)
@@ -45,5 +45,6 @@ public class Points
 
         _value -= value;
         Changed?.Invoke(_value);
+        return true;
     }
 }
