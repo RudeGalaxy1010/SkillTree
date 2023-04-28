@@ -14,6 +14,7 @@ public class SkillView : MonoBehaviour
     [SerializeField] private Button _selectButton;
     [SerializeField] private GameObject _selectionFrame;
     [SerializeField] private CanvasGroup _canvasGroup;
+    [SerializeField] private CanvasGroup[] _connectionCanvasGroups;
 
     public SkillData SkillData => _skillData;
 
@@ -52,5 +53,11 @@ public class SkillView : MonoBehaviour
         _costText.text = $"{_skillData.Cost}";
         _preview.sprite = _skillData.Preview;
         _selectionFrame.SetActive(isSelected);
+
+        for (int i = 0; i < _connectionCanvasGroups?.Length; i++)
+        {
+            _connectionCanvasGroups[i].alpha = 
+                _skillData.IsUnlocked ? Constants.UnlockedConnectionAlpha : Constants.LockedConnectionAplpha;
+        }
     }
 }
