@@ -9,7 +9,7 @@ public class Starter : MonoBehaviour
 
     [Header("Skills")]
     [SerializeField] private SkillData[] _skillsData;
-    [SerializeField] private SkillView[] _skillViews;
+    [SerializeField] private SkillSelector _skillSelector;
 
     private Points _points;
     private PointsPresenter _pointsPresenter;
@@ -29,7 +29,8 @@ public class Starter : MonoBehaviour
 
     private void InitSkills(Points points)
     {
-        _skillsPresenter = new SkillsPresenter().Construct(_skillViews, points);
+        _skillsPresenter = new SkillsPresenter().Construct(_skillSelector, _skillsData, points);
+        _skillSelector.Construct(_skillsPresenter);
     }
 
     private void OnDestroy()
@@ -41,5 +42,6 @@ public class Starter : MonoBehaviour
     {
         _pointsPresenter.Deconstruct();
         _skillsPresenter.Deconstruct();
+        _skillSelector.Deconstruct();
     }
 }

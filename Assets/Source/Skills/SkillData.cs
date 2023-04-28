@@ -1,4 +1,3 @@
-using System.Linq;
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "Custom/Skill Data", fileName = "New skill data")]
@@ -8,5 +7,6 @@ public class SkillData : ScriptableObject
     public int Cost;
     public Sprite Preview;
     public bool IsUnlocked;
+    public bool IsRoot;
     public SkillData[] Requirements;
 }

@@ -16,6 +16,7 @@ MonoBehaviour:
   Cost: 10
   Preview: {fileID: 21300000, guid: d0d7c9dd5277c9e4caf706f411818efb, type: 3}
   IsUnlocked: 0
+  IsRoot: 0
   Requirements:
   - {fileID: 11400000, guid: 20fe60e0621bce145a57398d4392798b, type: 2}
   - {fileID: 11400000, guid: 0a3fc79f9876db04f94bb84600adab7a, type: 2}
